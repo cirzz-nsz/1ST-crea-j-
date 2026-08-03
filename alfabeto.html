@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="alfabeto.css">
+    <title>Sin limites</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo Crea J Sin Limites amarillosinfondo.png" alt="aquivaellogo">
+            <h1>Sin limites</h1>
+        </div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="proyecto.html">Proyecto</a>
+                <a href="contactos.html">Contacto</a>
+                <a href="Masinfo.html">Mas info</a>
+            </nav>
+        </header>
+            <div class="estrellas" id="estrellas"></div>
+            <main>
+                <section class="cabeza">
+                    <h1 class="titulo">
+                        Alfabeto en Braille
+                    </h1>
+                </section>
+                <section class="imagen">
+                    <img src="image 5.png" alt="Imagen braille">
+                </section>
+                <section class="cabeza">
+                    <div class="contenido">
+                    <h1 class="titulo">
+                        ¿Cómo funciona?
+                    </h1>
+                    </div>
+                </section>
+                <section class="contenido">
+                    <div class="fila">
+                        <div class="parrafo">
+                            <div class="lista">
+                                <div class="posicion">
+                            <p class="parrafo">
+                                El sistema Braille funciona a partir de una celda formada por seis puntos en relieve organizados en dos columnas y tres filas. Cada punto tiene una posición específica numerada del 1 al 6, lo que permite crear diferentes combinaciones. Dependiendo de cuáles puntos estén levantados, se representan letras, números, signos de puntuación e incluso símbolos musicales. Esta estructura hace que el sistema sea muy eficiente, ya que con solo seis puntos se pueden formar decenas de caracteres distintos. Además, el Braille se lee utilizando las yemas de los dedos, lo que permite a las personas con discapacidad visual reconocer rápidamente cada símbolo mediante el tacto. La simplicidad de su diseño facilita el aprendizaje y la escritura, ya sea de forma manual o mediante dispositivos especializados como máquinas Perkins o líneas braille electrónicas. Gracias a esta organización, el Braille se adapta a distintos idiomas y necesidades, convirtiéndose en una herramienta universal para la comunicación y el acceso a la información.
+                            </p>
+                            <p class="posicion">
+                                La posición de los puntos se numera así:
+                            </p>
+                            <ul class="lista">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                            </ul>
+                            <ul class="lista">
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                </div>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        <footer class="footer">
+            <div class="contenedor">
+                <div class="footer-row">
+                    <div class="footer-links">
+                        <h4>Grupo</h4>
+                        <ul>
+                            <li><a href="index.html">Incio</a></li>
+                            <li><a href="#">Sobre nosotros</a></li>
+                            <li><a href="#">Aprende Braille</a></li>
+                            <li><a href="contactos.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Ayuda</h4>
+                        <ul>
+                            <li><a href="#">Preguntas</a></li>
+                            <li><a href="#">Aportes</a></li>
+                            <li><a href="#">Mision de la pagina</a></li>
+                            <li><a href="#">Recursos</a></li>
+                        </ul>
+                        <div class="footer-links">
+                        <h4>Siguenos</h4>
+                            <div class="social-link">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+    const cantidad = 150;
+    const contenedor = document.getElementById("estrellas");
+    if(contenedor) {
+        for(let i=0; i<cantidad; i++){
+            let estrella = document.createElement("div");
+            estrella.classList.add("estrella");
+            let size = Math.random()*3 + 1;
+            estrella.style.width = size+"px";
+            estrella.style.height = size+"px";
+            estrella.style.left = Math.random()*100 + "%";
+            estrella.style.animationDuration = (Math.random()*6 + 4)+"s";
+            estrella.style.animationDelay = Math.random()*10 + "s";
+            contenedor.appendChild(estrella);
+        }
+    }
+});
+        </script>
+    </body>
+</html>
